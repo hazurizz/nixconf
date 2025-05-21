@@ -51,7 +51,7 @@
       userSettings = rec {
         username = "hazaki";
         name = "hazaki";
-        email = "lsrhazaki@gmail.com";
+        email = "lsrhazurizz@gmail.com";
         nixconfsDir = "/home/${username}/.nixconfs";
 
         theme = "tomorrow-night";
