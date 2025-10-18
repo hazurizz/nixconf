@@ -53,15 +53,8 @@
           allowUnfree = true;
           allowUnfreePredicate = (_: true);
         };
-        overlays = [
+        overlays = [         
 
-          inputs.nixpkgs-f2k.overlays.stdenvs # f2k overlays
-          inputs.nixpkgs-f2k.overlays.compositors # f2k overlays
-             
-          (final: prev: {
-           awesome = inputs.nixpkgs-f2k.packages.${systemSettings.system}.awesome-git; # override awesome to use awesome-git from f2k
-          })          
-          
           (import ./user/apps/packages/upwork/overlay.nix)  # Custom overlay for Upwork-related packages
         ];
       };
